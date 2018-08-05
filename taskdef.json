@@ -12,7 +12,15 @@
                     "containerPort": 8080,
                     "hostPort": 8080
                 }
-            ]
+            ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "rdfs",
+                    "awslogs-region": "<region_name>",
+                    "awslogs-stream-prefix": "bwce"
+                }
+	        }
         }
     ]
 }
