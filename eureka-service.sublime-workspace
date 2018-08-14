@@ -1,0 +1,316 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"eur",
+				"eureka-service"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/curtis/restliquibase/taskdef.json",
+			"settings":
+			{
+				"buffer_size": 1143,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "\nStep 1: Configure repository\nStep 2: Build, tag, and push Docker image\nBuild, tag, and push Docker image\nNow that your repository exists, you can push a Docker image by following these steps:\nSuccessfully created repository\n623343386543.dkr.ecr.us-east-1.amazonaws.com/restliquibase\nEnsure you have installed the latest version of the AWS CLI and Docker. For more information, see the ECR documentation.\n1) Retrieve the login command to use to authenticate your Docker client to your registry.\nFor macOS or Linux systems, use the AWS CLI:\n$(aws ecr get-login --no-include-email --region us-east-1)\n\nFor Windows systems, use AWS Tools for PowerShell:\nInvoke-Expression -Command (Get-ECRLoginCommand -Region us-east-1).Command\n\nNote: If you receive an \"Unknown options: --no-include-email\" error when using the AWS CLI, ensure that you have the latest version installed. Learn more\n2) If you are using the AWS CLI, run the login command from the output of step 1.\n3) Build your Docker image using the following command. For information on building a Docker file from scratch see the instructions here. You can skip this step if your image is already built:\ndocker build -t restliquibase .\n\n4) After the build completes, tag your image so you can push the image to this repository:\ndocker tag restliquibase:latest 623343386543.dkr.ecr.us-east-1.amazonaws.com/restliquibase:latest\n\n5) Run the following command to push this image to your newly created AWS repository:\ndocker push 623343386543.dkr.ecr.us-east-1.amazonaws.com/restliquibase:latest\n\n\n\nrestliquibasedb.cugwlitoj5mj.us-east-1.rds.amazonaws.com\n\n",
+			"settings":
+			{
+				"buffer_size": 1604,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "build.gradle",
+			"settings":
+			{
+				"buffer_size": 1485,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/curtis/restliquibase/readme.txt",
+		"/Users/curtis/restliquibase/src/main/resources/application.properties",
+		"/Users/curtis/restliquibase/src/main/java/info/curtisnoel/restliquibase/model/User.java",
+		"/Users/curtis/restliquibase/src/main/java/info/curtisnoel/restliquibase/Application.java",
+		"/Users/curtis/restliquibase/src/main/java/info/curtisnoel/restliquibase/UserRepository.java",
+		"/Users/curtis/restliquibase/src/main/java/info/curtisnoel/restliquibase/repository/UserRepository.java",
+		"/Users/curtis/restliquibase/build.gradle",
+		"/Users/curtis/restliquibase/src/test/java/info/curtisnoel/restliquibase/ApplicationTests.java",
+		"/Users/curtis/restliquibase/src/main/java/info/curtisnoel/restliquibase/User.java",
+		"/Users/curtis/restliquibase/src/test/java/info/curtisnoel/QuestionmarksApplicationTests.java",
+		"/Users/curtis/restliquibase/settings.gradle",
+		"/Users/curtis/questionmarks/build.gradle",
+		"/Users/curtis/questionmarks/src/main/java/com/questionmarks/QuestionmarksApplication.java",
+		"/Users/curtis/questionmarks/src/main/resources/application.properties",
+		"/Users/curtis/questionmarks/src/main/resources/db/db.changelog-master.yaml",
+		"/Users/curtis/questionmarks/src/main/resources/db/changelog/changes/v0001.sql",
+		"/Users/curtis/questionmarks/src/main/java/com/questionmarks/Alternative.java",
+		"/Users/curtis/questionmarks/src/main/resources/db.changelog-master.yaml",
+		"/Users/curtis/questionmarks/src/main/resources/changelog/db/changes/v0001.sql",
+		"/Users/curtis/questionmarks/src/main/java/com/questionmarks/model/Alternative.java",
+		"/Users/curtis/questionmarks/src/main/java/com/questionmarks/model/Attempt.java",
+		"/Users/curtis/questionmarks/src/main/java/com/questionmarks/Exam.java",
+		"/Users/curtis/questionmarks/src/main/java/com/questionmarks/Question.java",
+		"/Users/curtis/questionmarks/src/main/java/com/questionmarks/User.java",
+		"/Users/curtis/hello-world/ecs-cluster.template",
+		"/Users/curtis/eureka-service/build.gradle",
+		"/Users/curtis/eureka-service/Dockerfile",
+		"/Users/curtis/Downloads/openshift.yml",
+		"/Users/curtis/Downloads/Jenkins.json",
+		"/Users/curtis/Downloads/cf-jenkins.json",
+		"/Users/curtis/learn-chef/cookbooks/learn_chef_apache2/recipes/default.rb",
+		"/Users/curtis/learn-chef/cookbooks/learn_chef_apache2/templates/index.html.erb",
+		"/Users/curtis/learn-chef/webserver.rb",
+		"/Users/curtis/Desktop/policy.json",
+		"/Users/curtis/Downloads/demo-rest-1/src/main/java/net/curtisnoel/demorest1/DemoRest1Application.java",
+		"/Users/curtis/Downloads/secrets-s3-blog.template",
+		"/Users/curtis/Downloads/scratch.json"
+	],
+	"find":
+	{
+		"height": 24.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/curtis/restliquibase/taskdef.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								432,
+								432
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1604,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1521,
+								1477
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "build.gradle",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1485,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Groovy/Groovy.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "eureka-service.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 440.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

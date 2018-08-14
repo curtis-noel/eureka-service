@@ -1,24 +1,21 @@
 {
-    "family": "eureka-demo",
+    "family": "eureka",
     "containerDefinitions": [
         {
             "image": "%REPOSITORY_URI%:v_%BUILD_NUMBER%",
-            "name": "eureka-demo",
+            "name": "eureka",
             "cpu": 10,
             "memory": 256,
             "essential": true,
             "portMappings": [
-                {
-                    "containerPort": 8080,
-                    "hostPort": 8080
-                }
+                {"containerPort": 8080,"hostPort": 8080}
             ],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
                     "awslogs-group": "rdfs",
                     "awslogs-region": "us-east-1",
-                    "awslogs-stream-prefix": "rdfs"
+                    "awslogs-stream-prefix": "eureka"
                 }
 	        }
         }

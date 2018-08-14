@@ -10,7 +10,6 @@ buildscript {
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-		classpath "gradle.plugin.com.palantir.gradle.docker:gradle-docker:0.20.1"
 	}
 }
 
@@ -19,13 +18,11 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
-apply plugin: 'com.palantir.docker'
 
 group = 'curtisnoel.info'
 
 bootJar {
-	baseName = 'eureka-service'
-	version = '0.0.1-SNAPSHOT'
+	baseName = 'app'
 }
 
 sourceCompatibility = 1.8
@@ -51,19 +48,4 @@ repositories {
 dependencies {
 	compile('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
-}
-
-
-eclipse {
-	classpath {
-		 containers.remove('org.eclipse.jdt.launching.JRE_CONTAINER')
-		 containers 'org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8'
-	}
-}
-
-docker {
-    dependsOn build
-    name "${project.group}/${bootJar.baseName}"
-    files bootJar.archivePath
-    buildArgs(['JAR_FILE': "${bootJar.archiveName}"])
 }
