@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "image": "%REPOSITORY_URI%:v_%BUILD_NUMBER%",
-            "name": "eureka",
+            "name": "eureka-server",
             "cpu": 10,
             "memory": 256,
             "essential": true,
